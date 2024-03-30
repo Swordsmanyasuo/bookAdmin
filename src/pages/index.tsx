@@ -3,10 +3,15 @@ import { Button } from "antd";
 import { Inter } from "next/font/google";
 import Head from "next/head";
 import Image from "next/image";
+import router from "next/router";
+import { useEffect } from "react";
 
 const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
+  useEffect(() => {
+    router.push("/book")
+  }, [])
   return (
     <>
       <Head>
@@ -16,7 +21,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className={styles.main}>
-        <Button type="primary">button</Button>
+
       </main>
     </>
   );
