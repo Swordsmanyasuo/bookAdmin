@@ -69,7 +69,7 @@ const USER_ITEMS: MenuProps["items"] = [
   },
 ];
 
-export function Layout({ children }: { children: ReactNode }) {
+export default function Layout({ children }: { children: ReactNode }) {
   const router = useRouter();
   const handleMenuClick: MenuProps['onClick'] = ({ key }) => {
     router.push(key);

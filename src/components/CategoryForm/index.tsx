@@ -24,10 +24,7 @@ export default function categoryForm({ title }: { title: string }) {
   const [preview, setPreview] = useState();
   const [cover, setCover] = useState('');
   const [levelOneList, setLevelOneList] = useState<CategoryType[]>([]);
-  const handleFinish = async (values: BookType) => {
-    if (values.publishAt) {
-      values.publishAt = dayjs(values.publishAt).valueOf();
-    }
+  const handleFinish = async (values: CategoryType) => {
     await categoryAdd(values)
     message.success('创建成功')
     router.push('/category')

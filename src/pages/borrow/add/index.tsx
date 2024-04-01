@@ -1,10 +1,7 @@
-import styles from "@/styles/Home.module.css";
-import { Inter } from "next/font/google";
-import Head from "next/head";
-import Image from "next/image";
+import { BorrowForm } from "@/components";
 
-const inter = Inter({ subsets: ["latin"] });
+export default function BorrowBook() {
+  return <BorrowForm title="借阅添加" />;
+};
 
-export default function Home() {
-  return <>borrow add</>;
-}
+

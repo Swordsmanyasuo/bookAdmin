@@ -4,7 +4,7 @@
 
 图书管理系统基于 **react、nextjs、antd** 技术栈实现的。
 
-**通过这个项目你可以学习到：**
+**通过这个项目可以学习到：**
 
 1. 如何使用 nextjs 开发一个真实项目
 2. react 的基本语法以及 react hook 的使用
@@ -13,15 +13,6 @@
 5. react 的组件如何封装
 
 
-# 功能介绍
-
-## 功能流程图
-
-![](https://raw.githubusercontent.com/calmound/book-admin-react/master/screenshot/1.png)
-
-### 系统演示
-
-![](https://raw.githubusercontent.com/calmound/book-admin-react/master/screenshot/3.gif)
 
 # 启动
 

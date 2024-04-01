@@ -3,9 +3,9 @@ import { ValueOf } from "next/dist/shared/lib/constants";
 import { USER_ROLE, USER_SEX, USER_STATUS } from "./../constants/index";
 
 export interface UserType {
-  nickName: string;
-  _id?: string;
-  name: string;
+  nickName?: string;
+  _id?: string | null;
+  name?: string;
   role: USER_ROLE;
   status: USER_STATUS;
   sex: USER_SEX;
